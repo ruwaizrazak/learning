@@ -13,3 +13,18 @@ print(" hey here is a \+")
 #but how about a \?
 print("hey here is a \\")
 #voila, that works
+
+#we gonna write a poem
+#he heee :D
+print(''' there once a movie star icon,
+	who preferred to sleep with the lights on
+	They learned how to code
+	a device that sure glowed
+	and lit up the night using python!''')
+#ha ha ha see, we made it :D
+
+
+#Asking for a user input
+#see, now we are talking :D
+name=input(" whats your name ?")
+print (name)
