@@ -12,6 +12,8 @@ print(message.upper())
 print(message.swapcase())
 name=firstname+lastname
 name=name.lower()
+#the above line converts the variable name to lower case. so tat we can use it for username as well
 print(" hello " + name)
+
 
 
