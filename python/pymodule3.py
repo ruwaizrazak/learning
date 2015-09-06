@@ -10,4 +10,8 @@ message = "Hello world"
 print(message.lower())
 print(message.upper())
 print(message.swapcase())
+name=firstname+lastname
+name=name.lower()
+print(" hello " + name)
+
 
