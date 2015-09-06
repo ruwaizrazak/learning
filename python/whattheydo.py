@@ -7,6 +7,7 @@ j=message.replace('hello','hi')
 #replaces hello with hi
 k=message.capitalize()
 l=message.find('world')
+print(message.upper())
 print(i)
 print(j)
 print(k)
