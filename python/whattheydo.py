@@ -10,7 +10,6 @@ l=message.find('world')
 print(message.upper())
 print(i)
 print(j)
-print(k)
 print(l)
-
+print(k)
 
