@@ -5,3 +5,6 @@ breadth=3
 #area of triangle
 area=length*breadth/2
 print ("the area is %.2f" %area)
+# Why are we using %.2f ? 
+#the %F is the same in the cpp language, the %2.f denotes that we can display up to two decimal places
+#why the print('area =' + area) dont work? because string and numerics wont catenate.
