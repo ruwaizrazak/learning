@@ -10,4 +10,7 @@ print ("the area is %.2f" %area)
 #why the print('area =' + area) dont work? because string and numerics wont catenate.
 #Lets fdo the same thing using .format to test it
 print("the area is {0:d}".format(area))
-print(" we are going to input three values,\n first one is {0:04d} \n second one is {1:d} \n third one is {2:2f}".format(7,8,9))
+print(" we are going to input three values,\n"+ \
+      " first one is {0:04d} \n second one is {1:d} \n third one is {2:2f}".format(7,8,9))
+#we used the \ to denote the command on the next line
+#keep in mind that the intentation matters. effing maters
