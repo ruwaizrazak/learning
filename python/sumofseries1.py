@@ -2,7 +2,7 @@ def fact(n):
    if n == 1:
        return n
    else:
-       return n*fact(n-1)
+       return n * fact(n-1)
 
 n = input("print the value of n")
 i = 0
