@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script type="text/javascript">
+      function fun()
+      {var un = document.getElementById('username').value;
+       var pass=document.getElementById('password').value;
+       var gender=document.getElementById('gender').value;
+       var branch=document.getElementById('branch').value;
+      if(un=="")
+       document.getElementById('userspace').innerHTML="enter username";
+      
+      }
+       </script>
+       <style type=text/css>
+       label{color:red;}
+       .basic{color:black;}
+       </style>
+    </head>
+    <body>
+       
+            <form name="register" method="" action="">
+           
+           <table align=center style="background:green">
+               <tr style="background:yellow"><td colspan=4> <h1 align="center"> sample registration form </h1></td></tr>
+               <tr class="bg">
+                   <td> <label class=basic>username</label></td>
+            <td><input type="text" id=username required>*</td>
+            <td><label id=userspace> </label></td>
+               </tr>
+           <tr class="bg">
+               <td><label class=basic>Password</label></td>
+          <td> <input type="password" id=password required>*</td>
+          <td><label id=passspace> </label></td>
+           </tr>
+           <tr class="bg">
+               <td><label class=basic>Gender*</label></td>
+          <td> <input type="radio" id=gender value="male">male</td>
+          <td> <input type="radio" id=gender value="female">female</td>
+          <td><label id=genspace> </label></td>
+           </tr>
+           <tr class="bg">
+               <td><label class=basic>branch</label></td>
+           <td>
+           <select id=branch>
+               <option>none</option>
+               <option>calicut</option>
+           </select></td>
+           <td><label id=branchspace> </label></td></tr>
+           <tr class="bg"><td><label class=basic>Languages Known</label></td>
+           <td><input type="checkbox" value="malayalam">malayalam</input></td>
+           <td><input type="checkbox" value="english">english</input></td>
+           <td><input type="checkbox" value="hindi">hindi</input></td>
+           <td><label id=langspace> </label></td></tr> 
+            
+           <tr class="bg"><td colspan=3><input type="button" onclick="fun()">   </td></tr>     
+        </table>  
+        </form></div>
+    </body></html>
