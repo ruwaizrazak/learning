@@ -52,8 +52,14 @@ a:hover, a:focus {
 }
 
 .twitter-icon .fa-twitter:after {
-	border-color: #028fcc transparent transparent;
+	border-color: #A1824E transparent transparent;
 }
 rez{
     color: #A1824E;
+}
+
+.rezation{
+    position: absolute;
+    margin-top: -50px;
+    left: 48%;
 }

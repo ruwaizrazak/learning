@@ -156,11 +156,12 @@ section {
 }
 
 .caption .btn-start {
-  color: #fff;
+  color: #a1824e;
   font-size: 14px;
   font-weight: 600;
   padding:14px 40px;
   border: 1px solid #6e6d6c;
+  border-style: dotted;
   border-radius: 4px;
   margin-top: 40px;
 }
@@ -261,7 +262,7 @@ section {
 }
 
 .navbar-right li a {
-  color: #fff;
+  color: #a1824e;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
