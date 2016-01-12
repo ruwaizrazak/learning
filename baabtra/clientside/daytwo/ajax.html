@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function testajax()
+        {
+           // alert("ajax");
+            var objxml;
+            if(window.XMLHttpRequest)
+            {
+                objxml=new XMLHttpRequest();
+            }
+            else
+                objxml=new ActiveXObject("Microsoft.XMLHTTP");
+            
+           // alert("a");
+            objxml.open("GET","loginform.html",true);
+            objxml.send();
+            objxml.onreadystatechange=function(){
+               if(objxml.readyState==4)
+               document.getElementById("testresponse").innerHTML=objxml.responseText;
+           }
+           //alert(objxml.responseText);
+            
+        }
+        
+        function regajax()
+        {
+           // alert("ajax");
+            var objxml1;
+            if(window.XMLHttpRequest)
+            {
+                objxml1=new XMLHttpRequest();
+            }
+            else
+                objxml1=new ActiveXObject("Microsoft.XMLHTTP");
+            
+           // alert("a");
+            objxml1.open("GET","sprint1test.html",true);
+            objxml1.send();
+            objxml1.onreadystatechange=function(){
+               if(objxml1.readyState==4)
+               document.getElementById("testresponse").innerHTML=objxml1.responseText;
+           }
+           //alert(objxml.responseText);
+            
+        }
+        
+        //function for the sprint file
+        
+        function fun()
+      {var un = document.getElementById('username').value;
+       var pass=document.getElementById('password').value;
+       var gender=document.getElementsByName('gender')[0].checked;
+       var gender1=document.getElementsByName('gender')[1].checked;
+       var flag=0;
+       for(i=0;i<3;i++)
+       {
+           if(document.getElementsByName('languages')[i].checked==true)
+           {flag=8;
+           alert(document.getElementsByName('languages')[i].value);
+           }
+           
+       }
+       if(un=="")
+       document.getElementById('userspace').innerHTML="enter username";
+      else if(pass=="")
+       document.getElementById('passspace').innerHTML="enter Password";
+      else if(gender==""&&gender1=="")
+        document.getElementById('genspace').innerHTML="Gender Required";
+      else if(branch==1)
+       document.getElementById('branchspace').innerHTML="branch required";
+       else if(flag!=8)
+       document.getElementById('langspace').innerHTML="atleast one language";  
+      }
+        </script>
+        </head>
+        <body>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis ac augue blandit congue. Etiam at velit in nisl maximus congue. Suspendisse nec tincidunt orci, ac commodo turpis. Morbi ac rutrum augue, eu vestibulum ex. Donec ac fringilla eros, in ornare tellus. Fusce cursus eros eget dolor dapibus porttitor. Aenean imperdiet semper rhoncus. Sed molestie sed risus vitae pretium. Duis posuere porttitor gravida.
+
+Vestibulum sed libero lorem. Fusce eu lobortis dolor, mollis aliquet eros. Praesent congue varius purus quis venenatis. Duis vitae risus convallis, placerat urna vitae, feugiat leo. Phasellus mi lorem, eleifend in purus non, pharetra congue turpis. Morbi euismod eget turpis sed eleifend. Aliquam luctus consectetur augue et consequat. Sed pharetra felis eget arcu rhoncus ullamcorper. Donec quis ullamcorper lacus. Aenean mattis tristique nulla eu placerat. Morbi et facilisis magna. Aliquam quis diam sit amet ligula mattis blandit id at turpis. Proin laoreet felis a tincidunt placerat. Morbi cursus posuere massa, a tincidunt nibh finibus sit amet. Maecenas vitae quam vitae nisl tincidunt molestie. Proin eu condimentum enim, a consequat neque. </p>
+           
+           <br><br>
+           <div id="testresponse"></div>
+            <div id="buttom1>
+                let ajax do the job
+             
+               <form method="GET" action=""> <input type="button" onclick="testajax()" value="login"></form>
+            </div>
+            
+            <br><br>
+            <div id="sprint1">
+                let ajax do the job
+             
+               <form method="GET" action=""> <input type="button" onclick="regajax()" value="login"></form>
+            </div>
+        </body>
+</html>

@@ -11,15 +11,35 @@
             <table>
                 <tr>
                     <td><label>username</label></td>
-                    <td><input type="text" name="username" required></td>
+                    <td><input type="text" id="username" required></td>
                 </tr>
                 <tr>
                     <td><label>password</label></td>
-                    <td><input type="password" required></td>
+                    <td><input type="password" id="password" required></td>
                 </tr>
-                <tr><td colspan=2 align=center><input type="submit" value="submit"></td></tr>
+                <tr><td colspan=2 align=center><input type="button"  onclick="fun()"></td></tr>
             </table>
             </form>
+           <table>
+               <tr><th>username</th><th>password</th></tr>
+          
+           <script type="text/javascript">
+           function fun(){
+               
+        var un,pass;
+        for(i=0;i<10;1++)
+        {
+            un[i]=document.getElementById('username').value;
+            pass[i]=document.getElementById('password').value;
+        }
+           for(i=0;i<10;i++)
+         { document.write("<tr><td>");
+          document.write(un[i].value);
+          document.write("</td><td>");
+          document.write(pass[i].value);
+          document.write("</td></tr>");}
+          }
+          </script>
             </body>
             </html>
         
