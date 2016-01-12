@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script src="/Users/ruwaizrazak/development/jquery.js"></script>
+    <script>
+        //Create a HTML page with a textbox, drop down list and a button.
+           //Write a jquery function to add item entered in the textbox to drop down list?
+         function fun(){
+            //alert("hello");
+           var textelement=document.getElementById("textelement").value;
+           var dropelement = "";
+           $("select").append(new Option(textelement,textelement));
+           
+         }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <input type="text" id="textelement" required="required">
+        <input type="button" onclick="fun()" value="click me">
+        <p></p>
+        <select id="selectid">
+            <option>hello</option>
+        </select>
+    </div>
+</body>
