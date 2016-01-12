@@ -95,7 +95,7 @@ a:hover {
 }
 
 section {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .heading {
@@ -294,13 +294,15 @@ section {
   transition: background-color 0.2s ease;
 }
 
+
 .our-services .col-sm-4:hover .service-icon {
   background-color: #333;
+  color: #a1824e;
 }
 
 .our-services .col-sm-4 {
-  border-right:1px solid #f2f2f2;
-  border-bottom:1px solid #f2f2f2;
+  border-right:1px solid #a1824e;
+  border-bottom:1px solid #a1824e;
   padding-bottom: 50px;
 }
 
@@ -498,6 +500,7 @@ section {
 *********Team CSS*********
 **************************/
 #team {
+    background: #000;
   padding-top: 0;
 }
 
@@ -660,6 +663,7 @@ section {
 ********Twitter CSS*******
 **************************/
 #twitter {
+  
   background-image: url(../images/twitter-bg.jpg);
 }
 
@@ -852,7 +856,9 @@ section {
 **************************/
 
 #contact {
-  padding-top: 45px;
+  border-top: 1px;
+  border-top-color: #a1824e;  
+  padding-top: 0px;
   padding-bottom: 0;
 }
 
@@ -861,7 +867,7 @@ section {
 }
 
 #contact-us {
-  background-image:url(../images/contact-bg.jpg);
+  background:#000;
   padding-bottom: 90px; 
 }
 
@@ -871,7 +877,7 @@ section {
 
 .form-control {
   background-color: transparent;
-  border-color: rgba(255,255,255,.1);
+  border-color:#A1824e;
   height: 50px;
   border-radius: 0;
   box-shadow: none;
@@ -979,5 +985,10 @@ ul.address {
 }
 
 /*Presets*/
-
-
+.contactformcolor{
+    color:#a1834e;
+}
+#services{
+    background-color: black;
+}
+h3{color:#a1824e;}
