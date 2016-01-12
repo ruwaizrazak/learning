@@ -4,10 +4,20 @@
     <title>
         Login Form
     </title>
+    <script src="/Users/ruwaizrazak/development/jquery.js"></script>
+    <script>
+    function AddData(){ 
+        var rows = "";
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        rows += "<tr><td>" + username + "</td><td>" + password + "</td></tr>";
+        $(rows).appendTo("#table tbody");//tbody is refereed to the table body
+}
+    </script>
     </head>
     <body>
         <h3> login form</h3>
-        <form method="post" action="">
+        <form id="form" method="post" action="">
             <table>
                 <tr>
                     <td><label>username</label></td>
@@ -17,29 +27,10 @@
                     <td><label>password</label></td>
                     <td><input type="password" id="password" required></td>
                 </tr>
-                <tr><td colspan=2 align=center><input type="button"  onclick="fun()"></td></tr>
+                <tr><td colspan=2 align=center><input type="button"  onclick="AddData()"></td></tr>
             </table>
             </form>
-           <table>
+           <table id="table">
                <tr><th>username</th><th>password</th></tr>
-          
-           <script type="text/javascript">
-           function fun(){
-               
-        var un,pass;
-        for(i=0;i<10;1++)
-        {
-            un[i]=document.getElementById('username').value;
-            pass[i]=document.getElementById('password').value;
-        }
-           for(i=0;i<10;i++)
-         { document.write("<tr><td>");
-          document.write(un[i].value);
-          document.write("</td><td>");
-          document.write(pass[i].value);
-          document.write("</td></tr>");}
-          }
-          </script>
-            </body>
-            </html>
-        
+           </table>
+           
