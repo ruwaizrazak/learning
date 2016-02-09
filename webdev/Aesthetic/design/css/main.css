@@ -326,7 +326,7 @@ section {
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/about-bg.jpg);
+  background:#000;
   padding: 60px 0;
 }
 
@@ -931,7 +931,7 @@ ul.address {
 }
 
 #footer .footer-bottom {
-  background-color: #fff;
+  background-color: #000;
   padding: 20px 0 10px;
 }
 

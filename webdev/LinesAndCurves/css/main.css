@@ -1,0 +1,84 @@
+h1, h4, h3, li, a{
+    font-family: 'Lato',san-serif;
+    font-weight: 300;
+}
+p {
+    color: #3a3b36;
+    font-family: 'Tienne',serif;
+}
+#firstcontainer{
+    margin-top:-20px;
+    background:url('../resources/container1/living.jpg');
+    height:100vh;
+}
+#brandname{
+   position: absolute;
+   top: 45%;
+   background: 
+   
+}
+#services{
+   /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(233,236,229,1),rgba(216,216,216,.2)),url('../resources/container2/container2.jpg'); /*Safari 5.1-6*/
+    background: -o-linear-gradient(rgba(233,236,229,1),rgba(216,216,216,rgba(216,216,216,.2))),url('../resources/container2/container2.jpg'); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(rgba(233,236,229,1),rgba(216,216,216,.2)),url('../resources/container2/container2.jpg'); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, rgba(233,236,229,1), rgba(216,216,216,.2)),url('../resources/container2/container2.jpg');
+    height: 100vh;
+    
+}
+#interior, #exterior, #commercial{
+   border-width: 20px;
+   border-color: #3b3a36;
+   padding:40px;
+   padding-left:50px;
+   padding-right:50px;
+   
+}
+
+#arrow{
+    margin-top: 40px;
+}
+
+hr{
+    border-color:#3a3b36;
+    background: #3b3a36;
+}
+
+
+ .carousel{
+ position: absolute;
+ margin-bottom: 0px;
+ line-height:1;
+ top:0;
+ left:0;
+ width:100%;
+ min-height: 500px;}
+
+#servicesinvokepart, #servicestext{
+    border-width: 2px;
+    border-color: #3a3b36;
+    left:25%;
+    width:50%;
+    height:50%;
+    top:25%;
+    background:#fff;
+    position:absolute;
+    text-align:center;
+}
+
+#thirdcontainer{
+    background: #3a3b36;
+   
+    
+}
+.creamtext{
+    color: #e9ece5;
+}
+
+#thirdheader{
+    margin: 60px;
+}
+
+#toprowimages{
+  
+}
