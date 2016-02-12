@@ -1,4 +1,4 @@
-h1, h4, h3, li, a{
+h1, h2, h4, h3, li, a{
     font-family: 'Lato',san-serif;
     font-weight: 300;
 }
@@ -52,7 +52,7 @@ hr{
 }
 
 #herocontainer{
-  /*display: table;*/
+background: #e9ece6;
 }
 
 
@@ -67,6 +67,7 @@ hr{
 padding-top: 180px;
 padding-right: 30px;
 text-align: center;
+
 }
 
 #carouseltextfield{
@@ -77,4 +78,39 @@ text-align: center;
 .carousel{
   overflow:hidden;
   width: 100%;
+}
+#footerlogo{
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+#footerspace{
+  font-size: 12px;
+  background: #3a3b36;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#footerspace p{
+  line-height: 9px;
+  color: #e9ece6;
+}
+address{
+  font-size: 12px;
+  color: #e9ece6;
+}
+#mapcanvas{
+  background: #3a3b36;
+  
+}
+#footerspace h4{
+  color: #e9ece6;
+}
+
+
+#mapcanvas h2{
+  color: #e9ece6;
+  padding: 40px;
+}
+rez{
+  font-size: 12px;
+  color: #e9ece6;
 }
