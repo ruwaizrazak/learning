@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Stage2</title>
+</head>
+<body ng-init="skills=['PHP','Graphic Designing','JAVA']">
+<div id="result" >
+	Skills:<br/>
+	<select name="Skills">
+		<option ng-repeat="skill in skills">{{skill}}</option>
+	</select>
+<script src="scripts/angular.min.js"></script>
+
+</body>
+</html>

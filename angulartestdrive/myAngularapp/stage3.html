@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Stage 3</title>
+</head>
+<body ng-init="user=[{email:'steve@mail.in',course:'PHP Full Stack 160'},{email:'stevejcaps@mail.in',course:'Android Full Stack 160'},{email:'joyc@mail.in',course:'PHP Full Stack 160'},{email:'john@mail.in',course:'Java Full Stack 160'},{email:'jacob@mail.in',course:'PHP Full Stack 160'},{email:'stephen@mail.in',course:'PHP Full Stack 160'},{email:'christie@mail.in',course:'Java Full Stack 160'}]">
+	Search <br/>
+	<input type="text" ng-model="searchlog">
+	<ul>
+		<li ng-repeat="users in user| filter: searchlog | orderBy:'email'">{{users.email + '-'+ users.course}}</li>
+	</ul>
+	<script src="scripts/angular.min.js"></script>
+</body>
+</html>
+

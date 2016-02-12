@@ -1,0 +1,22 @@
+<body ng-app="myApp" >
+<div ng-view></div>
+    <div ng-controller="SimpleController ">
+    Search by course:<br/>
+    	<input type="text" ng-model="searchbar"><br/>
+    	<ul>
+    	<li ng-repeat="mentee in students | filter : searchbar"> {{ mentee.name + mentee.course}} </li>
+    	</ul>
+    	<br/><br/>
+    	Enter name of the mentee:
+    	<input type="text" ng-model="menteeNew.mName">
+    	Enter course of the mentee:
+    	<input type="text" ng-model="menteenew.mCourse">
+    	 <input type="button" ng-click="viewLoad()" value="Add Mentee">
+    	 <!--<a href="#/2">Link with me</a> -->
+    </div>
+
+
+ <script type="text/javascript" src="scripts/angular.min.js"></script>
+ <script type="text/javascript" src="js/new.js"></script>
+   
+</body>
