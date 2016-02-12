@@ -14,8 +14,8 @@ p {
 #brandname{
    position: absolute;
    top: 45%;
-   background: 
-   
+   background:
+
 }
 #services{
    /* For browsers that do not support gradients */
@@ -24,7 +24,7 @@ p {
     background: -moz-linear-gradient(rgba(233,236,229,1),rgba(216,216,216,.2)),url('../resources/container2/container2.jpg'); /*Fx 3.6-15*/
     background: linear-gradient(to bottom, rgba(233,236,229,1), rgba(216,216,216,.2)),url('../resources/container2/container2.jpg');
     height: 100vh;
-    
+
 }
 #interior, #exterior, #commercial{
    border-width: 20px;
@@ -32,7 +32,7 @@ p {
    padding:40px;
    padding-left:50px;
    padding-right:50px;
-   
+
 }
 
 #arrow{
@@ -45,40 +45,36 @@ hr{
 }
 
 
- .carousel{
- position: absolute;
- margin-bottom: 0px;
- line-height:1;
- top:0;
- left:0;
- width:100%;
- min-height: 500px;}
 
-#servicesinvokepart, #servicestext{
-    border-width: 2px;
-    border-color: #3a3b36;
-    left:25%;
-    width:50%;
-    height:50%;
-    top:25%;
-    background:#fff;
-    position:absolute;
-    text-align:center;
-}
 
-#thirdcontainer{
+#thirdcontainer, #footerstrip{
     background: #3a3b36;
-   
-    
-}
-.creamtext{
-    color: #e9ece5;
 }
 
-#thirdheader{
-    margin: 60px;
+#herocontainer{
+  /*display: table;*/
 }
 
-#toprowimages{
-  
+
+}
+#herorow{
+  /*display: table-row;*/
+}
+#herocarousel{
+  /*display: table-cell;*/
+}
+#heroheader{
+padding-top: 180px;
+padding-right: 30px;
+text-align: center;
+}
+
+#carouseltextfield{
+padding-top: 150px;
+padding-right: 30px;
+text-align: center;
+}
+.carousel{
+  overflow:hidden;
+  width: 100%;
 }
