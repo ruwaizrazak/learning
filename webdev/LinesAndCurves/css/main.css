@@ -1,6 +1,25 @@
-h1, h2, h4, h3, li, a{
+nav{
+  margin-top: 50px;
+}
+
+body{
+  background: #e9ece6;
+}
+h1, h2, h4, li, a{
     font-family: 'Lato',san-serif;
     font-weight: 300;
+    text-align: center;
+}
+
+#heroheader h4{
+  color: #3a3b36;
+}
+
+
+
+h3, h5{
+  font-family: 'Lato',san-serif;
+  font-weight: 400;
 }
 p {
     color: #3a3b36;
@@ -9,7 +28,10 @@ p {
 #firstcontainer{
     margin-top:-20px;
     background:url('../resources/container1/living.jpg');
-    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height:105vh;
 }
 #brandname{
    position: absolute;
@@ -40,12 +62,64 @@ p {
 }
 
 hr{
-    border-color:#3a3b36;
-    background: #3b3a36;
+  border-style: dotted;
+    border-color:#e9ece5;
+    background: #e9ece5;
 }
 
+#abouttopbg{
+  background: url(../resources/about/abouttop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  height: 60vh;
 
+  /**/
+}
+
+#AboutUsHeader{
+  margin-top: 15%;
+
+  padding:20px;
+}
+
+#AboutUsContent{
+  padding: 30px;
+
+}
+
+#aboutbottombg{
+
+  background: url(../resources/about/aboutbottom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  -webkit-clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0 100%);
+  height: 50vh;
+}
+#work{
+  background: #3a3b36;
+}
+#workimage{
+  background: url(../resources/work/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  height: 60vh;
+
+}
+
+#workstextarea{
+  color: #e9ece5;
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px;
+}
 
 #thirdcontainer, #footerstrip{
     background: #3a3b36;
@@ -75,6 +149,17 @@ padding-top: 150px;
 padding-right: 30px;
 text-align: center;
 }
+
+#carouseltextfield h4{
+    color: #3a3b36;
+    line-height: 20px;
+}
+
+#carouseltextfield p{
+    padding-top: 10px;
+}
+
+
 .carousel{
   overflow:hidden;
   width: 100%;
@@ -99,7 +184,7 @@ address{
 }
 #mapcanvas{
   background: #3a3b36;
-  
+
 }
 #footerspace h4{
   color: #e9ece6;
@@ -113,4 +198,20 @@ address{
 rez{
   font-size: 12px;
   color: #e9ece6;
+}
+#quicklinks{
+  padding: 30px;
+  text-align: left;
+}
+#openingtimes h5{
+  color:#e9ece6;
+}
+
+#openingtimes{
+  padding: 30px;
+  text-align: right;
+}
+
+quicklinks rez{
+  font-size: 14px;
 }
