@@ -15,6 +15,17 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Tienne' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+
+<script>
+new WOW().init();
+</script>
+<!--smooth scrolling begins-->
+
+<!--smooth scrolling ends-->
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +38,7 @@
       <!-- navbar starts here-->
 
 <!-- navbar ends here -->
-    <div class="container-fluid" id="firstcontainer">
+    <div class="container-fluid" style="margin-top:-20px;" id="firstcontainer">
       <!--for nav bar-->
       <div class="row">
         <div class="col-xs-12">
@@ -48,24 +59,27 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#">HOME <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#AboutUs" class="smoothScroll">ABOUT US</a></li>
+        <li><a href="#work" class="smooth-scroll">WORKS</a></li>
         <li><a href="#">INTERIOR</a></li>
         <li><a href="#">EXTERIOR</a></li>
         <li><a href="#">COMMERCIAL SPACE</a></li>
-        <li><a href="#">WORKS</a></li>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 </div>
 </div>
-        <div class="row">
-            <div class="col-xs-offset-6 col-xs-4 text-center" id="brandname">
-               <!-- <img src="resources/container1/logo.png" class="img-responsive text-center"> -->
+        <div class="row" id="logotextcontainer">
+            <div class="col-xs-4 col-sm-5 col-xs-offset-4 col-sm-offset-5 " id="brandname">
+               <img src="resources/container1/first-text.png" class="img-responsive text-center">
 
                 </div>
         </div>
+
     </div>
+
 
 
 <!--
@@ -108,13 +122,14 @@
 
   </div>
     <div class="col-sm-3" id="AboutUsHeader">
-      <h2 style="color:#3a3b36">We Adore You</h2>
-      <p class="text-center">And thats why we want to provide the best for you.</p>
+      <h2 style="color:#3a3b36" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">We Adore You</h2>
+      <p class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">And thats why we want to provide the best for you.</p>
     </div>
   </div>
   <div class="row" id="AboutUsbottom">
-    <div class="col-sm-4 col-sm-offset-2" id="AboutUsContent"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies gravida dignissim. Sed maximus sodales diam id consectetur. Praesent eu risus vel est vehicula faucibus. Nulla eu leo tristique, imperdiet.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies gravida dignissim. Sed maximus sodales diam id consectetur. Praesent eu risus vel est vehicula faucibus. Nulla eu leo tristique, imperdiet.</p></div>
+    <div class="col-sm-4 col-sm-offset-2" id="AboutUsContent"><p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Lines & curves is a full service design firm that specializes in corporate, commercial and residential design. We offer design consultancy, space planning and project management. One of the primary functions of our firm is to provide quality furnishings and a dedicated service.
+</p>
+    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">From our architects and engineers to our construction managers and crews, our in-house staff has created buildings that have earned us a good recognition and an unequaled reputation as an industry leader.</p></div>
     <div class="col-sm-6" id="aboutbottombg">
     </div>
   </div>
@@ -123,10 +138,10 @@
     <div class="row">
       <div class="col-sm-4 col-sm-offset-2" id="workstextarea">
 
-        <h2 >Our Works</h2>
+        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">Our Works</h2>
 <br>
-        <p style="color:#e9ece5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies gravida dignissim. Sed maximus sodales diam id consectetur. Praesent eu risus vel est vehicula faucibus. Nulla eu leo tristique, imperdiet.</p><br>
-        <p style="color:#e9ece5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies gravida dignissim. Sed maximus sodales diam id consectetur. Praesent eu risus vel est vehicula faucibus. Nulla eu leo tristique, imperdiet.</p>
+        <p style="color:#e9ece5" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies gravida dignissim. Sed maximus sodales diam id consectetur. Praesent eu risus vel est vehicula faucibus. Nulla eu leo tristique, imperdiet.</p><br>
+        <p style="color:#e9ece5" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">We are a builder first,and that makes all the difference. Because we are true builders, owners get more and better options. As one of the best premier commercial construction companies..</p>
 
 
       </div>
@@ -214,20 +229,20 @@
     </div>
   <div class="container-fluid">
     <div class="row" id="footerspace">
-      <div class="col-sm-3" id="quicklinks">
+      <div class="col-xs-3" id="quicklinks">
 <ul>
         <li><a href="#"><p>Move to Top</p></a></li>
         <li><a href="# "><p>About Us</p></a></li>
         <li><a href="#"><p>Services We Offer</p></a></li>
       </ul>
       </div>
-      <div class="col-sm-6 text-center" id="footerlogo">
+      <div class="col-xs-6 text-center" id="footerlogo">
         <img src="resources/logo.jpg" height="50px" alt="logo">
         <h4>Lines And Curves</h4>
         <p style="font-size:10px;">All rights reserved</p>
         <p style="font-size:10px;"><a href="https://in.linkedin.com/in/ruwaizrazak"><rez>Meet Our Designer</rez></a></p>
       </div>
-      <div class="col-sm-3" id="openingtimes">
+      <div class="col-xs-3" id="openingtimes">
 <ul>
         <li><h5>Opening Times</h5></li>
       <li>  <p>Monday to Saturday</p></li>

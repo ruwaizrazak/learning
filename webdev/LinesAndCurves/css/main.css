@@ -1,7 +1,11 @@
-nav{
+
+  nav{
   margin-top: 50px;
 }
-
+logotext{
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+}
 body{
   background: #e9ece6;
 }
@@ -26,18 +30,21 @@ p {
     font-family: 'Tienne',serif;
 }
 #firstcontainer{
-    margin-top:-20px;
-    background:url('../resources/container1/living.jpg');
+
+    background-image:url('../resources/container1/living.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
     height:105vh;
+
 }
 #brandname{
    position: absolute;
-   top: 45%;
-   background:
+   top: 33%;
+   /*left:40%;*/
+}
 
+#logotextcontainer{
 }
 #services{
    /* For browsers that do not support gradients */
@@ -214,4 +221,13 @@ rez{
 
 quicklinks rez{
   font-size: 14px;
+}
+
+@media (min-width:768px;){
+  #brandname{
+     position: absolute;
+     top: 33%;
+     padding-right: 20px;
+     right: 40%;
+  }
 }
