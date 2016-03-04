@@ -1,0 +1,51 @@
+body{
+    background: #F96B4E;
+}
+#header, #secondpart, #thirdpart{
+  height: 100vh;
+
+}
+#firstimage{
+  margin-top: 20vh;
+}
+rez{
+  color: #3a3b36;
+  font-family: verdana;
+  font-size: 17px;
+  text-align: center;
+}
+#anchorpart{
+  margin-top: 10vh;;
+}
+
+#welcomeimage{
+  padding:2%;
+}
+
+#goimage {
+  position: absolute;
+  left: 10%;
+}
+#accountimage{
+  padding-top:4%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+}
+
+#formpage{
+  margin-top: 5%;
+  margin-bottom: 10%;
+
+}
+#formcontainer{
+  margin: 20px;
+  background: url("../elements/form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55vh;
+}
+form{
+  position:absolute;
+  left: 20%;
+  margin-top: -2%;
+}
