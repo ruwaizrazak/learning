@@ -31,11 +31,12 @@ p {
 }
 #firstcontainer{
 
-    background-image:url('../resources/container1/living.jpg');
+    background-image:url('../living.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
     height:105vh;
+    margin-top: -20px;
 
 }
 #brandname{
@@ -75,13 +76,15 @@ hr{
 }
 
 #abouttopbg{
-  background: url(../resources/about/abouttop.jpg);
+  background: url(../resources/about/abouttopcut.png);
   background-size: cover;
   background-repeat: no-repeat;
 
+/*-moz-clip-path: polygon(100% 0, 0 0, 0 100%);
   -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
-  clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);*/
   height: 60vh;
+  overflow: hidden;
 
   /**/
 }
@@ -99,12 +102,12 @@ hr{
 
 #aboutbottombg{
 
-  background: url(../resources/about/aboutbottom.jpg);
+  background: url(../resources/about/aboutbottomcut.png);
   background-size: cover;
   background-repeat: no-repeat;
 
-  -webkit-clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0 100%);
-  clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0 100%);
+  /*-webkit-clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0 100%);*/
   height: 50vh;
 }
 #work{
