@@ -1,0 +1,51 @@
+#brandname{
+   position: absolute;
+   top: 33%;
+   left:-8%;
+}
+#AboutUsHeader{
+  margin-top: 20%;
+  padding-left:30px;
+}
+
+#AboutUsHeader h2{
+  font-size: 20px;
+}
+#AboutUsContent{
+  padding: 5px;
+}
+#workstextarea{
+  color: #e9ece5;
+  text-align: center;
+  margin-top: 60px;
+  padding: 10px;
+}
+#workimage{
+  background: url(../resources/work/3cut.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+
+}
+#carouseltextfield{
+padding-top: 5%;
+padding-right: 30px;
+text-align: center;
+}
+#heroheader{
+
+padding-top: 10%;
+padding-right: 30px;
+text-align: center;
+
+}
+#openingtimes{
+  padding: 5px;
+  padding-top: 15px;
+  text-align: right;
+}
+#quicklinks{
+  padding: 5px;
+  padding-top: 10px;
+  text-align: left;
+}
