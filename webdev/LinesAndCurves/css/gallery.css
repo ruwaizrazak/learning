@@ -1,0 +1,19 @@
+#InteriorThumpnails{
+  display:none;
+}
+#textpart h3{
+  font-size: 17px;
+  text-decoration: underline;
+}
+#textpart p{
+  text-align: justify;
+  font-size: 12px;
+  margin-top: -18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#quicklinks, #openingtimes{
+  display: none;
+}
