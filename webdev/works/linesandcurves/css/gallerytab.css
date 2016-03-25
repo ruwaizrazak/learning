@@ -1,0 +1,13 @@
+#textpart h3{
+  margin-top: -5%;
+  font-size: 17px;
+  text-decoration: underline;
+}
+#textpart p{
+  text-align: justify;
+  font-size: 12px;
+  margin-top: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+}

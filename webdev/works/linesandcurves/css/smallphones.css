@@ -1,0 +1,16 @@
+#AboutUsHeader{margin-top:-20px;padding:20px;padding-top:-20px;}
+#AboutUsContent{margin-top:-10px;padding-top:-3px;font-size:14px;}
+#workimage{background:url(../resources/work/3cut.png);background-size:cover;background-repeat:no-repeat;height:0px;visibility:hidden;}
+#workstextarea{color:#e9ece5;margin-top:4px;padding-top:5px;}
+#workstextarea p{font-size:12px;text-align:left;}
+#workstextarea h2{font-size:25px;}
+#heroheader{padding-top:20px;padding-right:0px;text-align:center;font-size:14px;padding-bottom:0px;margin-bottom:3px;}
+#heroheader h4{font-size:13px;}
+#carouseltextfield{padding-top:9px;padding-right:5px;padding-left:5px;text-align:center;padding-bottom:15px;}
+#carouseltextfield h4{font-size:17px;}
+#carouseltextfield p{font-size:13px;}
+#mapcanvas{margin-top:-20px;padding:0px;}
+#mapcanvas h2{font-size:20px;}
+#quicklinks{margin-left:-35px;padding:0px;margin-bottom:10px;}
+#openingtimes{padding:0px;;text-align:center;margin-left:-35px;}
+#footerlogo{padding-top:25px;padding-bottom:20px;}
