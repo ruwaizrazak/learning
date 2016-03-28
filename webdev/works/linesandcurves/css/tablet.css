@@ -1,8 +1,14 @@
+h2{font-size:20px;}
+p{font-size:12px;}
 #brandname{position:absolute;top:33%;left:-8%;}
 #AboutUsHeader{margin-top:20%;padding-left:30px;}
 #AboutUsHeader h2{font-size:20px;}
 #AboutUsContent{padding:5px;}
-#workstextarea{color:#e9ece5;text-align:center;margin-top:60px;padding:10px;}
+#workstextarea{color:#e9ece5;text-align:center;margin-top:8%;padding:10px;}
+#workstextarea p{font-size: 12px;margin-top: -10px;padding-top: 0px;}
+#workstextarea h2{
+  font-size: 20px;margin-top: 3px;;
+}
 #workimage{background:url(../resources/work/3cut.png);background-size:cover;background-repeat:no-repeat;height:50vh;}
 #carouseltextfield{padding-top:13%;padding-right:30px;text-align:center;}
 #heroheader{padding-top:15%;padding-right:30px;text-align:center;}

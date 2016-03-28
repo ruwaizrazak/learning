@@ -15,10 +15,10 @@ hr{border-style:dotted;border-color:#e9ece5;background:#e9ece5;}
 #abouttopbg{background:url(../resources/about/abouttopcut.png);background-size:cover;background-repeat:no-repeat;height:60vh;overflow:hidden;/**/}
 #AboutUsHeader{margin-top:15%;padding:20px;}
 #AboutUsContent{padding:30px;}
-#aboutbottombg{background:url(../resources/about/aboutbottomcut.png);background-size:cover;background-repeat:no-repeat;height:50vh;}
+#aboutbottombg{background:url(../resources/about/aboutbottomcut.png);background-size:cover;background-repeat:no-repeat;height:60vh;}
 #work{background:#3a3b36;}
 #workimage{background:url(../resources/work/3cut.png);background-size:cover;background-repeat:no-repeat;height:60vh;}
-#workstextarea{color:#e9ece5;text-align:center;margin-top:60px;padding:40px;}
+#workstextarea{color:#e9ece5;text-align:center;margin-top:7%;padding:40px;padding-top: 1px;}
 #thirdcontainer, #footerstrip{background:#3a3b36;}
 #herocontainer{background:#e9ece6;}
 #heroheader{padding-top:180px;padding-right:30px;text-align:center;}
@@ -33,11 +33,12 @@ address{font-size:12px;color:#e9ece6;}
 #mapcanvas{background:#3a3b36;}
 #footerspace h4{color:#e9ece6;}
 #mapcanvas h2{color:#e9ece6;padding:40px;}
-rez{font-size:12px;color:#e9ece6;}
+rez{font-size:14px;color:#e9ece6;}
 #quicklinks{padding:30px;text-align:left;}
 #openingtimes h5{color:#e9ece6;}
 #openingtimes{padding:30px;text-align:right;}
-quicklinks rez{font-size:14px;}
+
+#quicklinks h4{padding-bottom: 5px;}
 .overlay {
    background:transparent;
    position:relative;
@@ -45,4 +46,4 @@ quicklinks rez{font-size:14px;}
    height:450px; /* your iframe height */
    top:450px;  /* your iframe height */
    margin-top:-450px;  /* your iframe height */
-}
+}li {list-style-type: none;}
