@@ -8,9 +8,15 @@
     <title>Inveniö</title>
 
     <!-- Bootstrap -->
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+<script src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,8 +44,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">WHAT IS THIS?</a></li>
+        <li>
         <li><a href="#">PRE-EVENTS</a></li>
-        <li><a href="#">EVENTS</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENTS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a data-toggle="modal" data-target="#dayone">Day One</a></li>
+            <li><a data-toggle="modal" data-target="#daytwo">Day Two</a></li>
+          </ul>
+        </li>
         <li><a href="#">REACH TO US</a></li>
       </ul>
 
@@ -62,10 +76,12 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
+            <h4 class="modal-title">Sign In</h4>
           </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+            <form><input type="text" value="enter USN" name="userid">
+            <input type="password" value="enter password" name="password">
+            <input type="submit" value="submit"></form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -74,12 +90,287 @@
 
       </div>
     </div>
-<div class="container-fluid" id="firstcontainer">
+    <div class="modal fade" id="signup" role="dialog">
+      <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Create a new account</h4>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" value="enter name" name="name">
+              <input type="text" value="enter email" name="email"><br>
+              <input type="text" value="enter USN" name="usn">
+              <input type="text" value="enter semester" name="sem"><br>
+              <input type="password" value="enter password" name="password">
+              <input type="submit" value="submit">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- events modal starts-->
+    <div class="modal fade" id="dayone" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Events : Day One</h4>
+          </div>
+          <div class="modal-body">
+            <!-- timeline starts-->
+            <section class="cd-horizontal-timeline">
+            	<div class="timeline">
+            		<div class="events-wrapper">
+            			<div class="events">
+            				<ol>
+            					<li><a href="#0" data-date="9:00" class="selected"></a></li>
+            					<li><a href="#0" data-date="10:00">10:00</a></li>
+            					<li><a href="#0" data-date="11:00">11:00</a></li>
+            					<li><a href="#0" data-date="12:00">12:00 </a></li>
+            					<li><a href="#0" data-date="13:00">13:00</a></li>
+            					<li><a href="#0" data-date="14:00">14:00</a></li>
+            					<li><a href="#0" data-date="15:00">15:00</a></li>
+            					<li><a href="#0" data-date="16:00">16:00</a></li>
+            				</ol>
+
+            				<span class="filling-line" aria-hidden="true"></span>
+            			</div> <!-- .events -->
+            		</div> <!-- .events-wrapper -->
+
+            		<ul class="cd-timeline-navigation">
+            			<li><a href="#0" class="prev inactive">Prev</a></li>
+            			<li><a href="#0" class="next">Next</a></li>
+            		</ul> <!-- .cd-timeline-navigation -->
+            	</div> <!-- .timeline -->
+
+            	<div class="events-content">
+            		<ol>
+            			<li class="selected" data-date="9:00">
+            				<h2>Inaugration</h2>
+            				<em>The Best Things Does Have A Right Start.</em>
+            				<p>
+We cordially welcomes you to the inaugration of the Invenio, Which is proudly presented by the Ghousia College Of Engineering
+            				</p>
+            			</li>
+
+            			<li data-date="10:00">
+            				<h2>Tech Expo</h2>
+            				<em>Show Your Products</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="11:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="12:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="13:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="14:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="15:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="16:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+            		</ol>
+            	</div> <!-- .events-content -->
+            </section>
+            <!--timeline ends-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div><!--dayone ends-->
+    <div class="modal fade" id="daytwo" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Events: Day Two</h4>
+          </div>
+          <div class="modal-body">
+            <!-- timeline starts-->
+            <section class="cd-horizontal-timeline">
+            	<div class="timeline">
+            		<div class="events-wrapper">
+            			<div class="events">
+            				<ol>
+            					<li><a href="#0" data-date="9:00" class="selected"></a></li>
+            					<li><a href="#0" data-date="10:00">10am</a></li>
+            					<li><a href="#0" data-date="11:00">11</a></li>
+            					<li><a href="#0" data-date="12:00">12:00 </a></li>
+            					<li><a href="#0" data-date="13:00">13:00</a></li>
+            					<li><a href="#0" data-date="14:00">14:00</a></li>
+            					<li><a href="#0" data-date="15:00">15:00</a></li>
+            					<li><a href="#0" data-date="16:00">16:00</a></li>
+            				</ol>
+
+            				<span class="filling-line" aria-hidden="true"></span>
+            			</div> <!-- .events -->
+            		</div> <!-- .events-wrapper -->
+
+            		<ul class="cd-timeline-navigation">
+            			<li><a href="#0" class="prev inactive">Prev</a></li>
+            			<li><a href="#0" class="next">Next</a></li>
+            		</ul> <!-- .cd-timeline-navigation -->
+            	</div> <!-- .timeline -->
+
+            	<div class="events-content">
+            		<ol>
+            			<li class="selected" data-date="9:00">
+            				<h2>Event name</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="10:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="11:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="12:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="13:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="14:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="15:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+
+            			<li data-date="16:00">
+            				<h2>Event title here</h2>
+            				<em>quote</em>
+            				<p>
+            					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            				</p>
+            			</li>
+            		</ol>
+            	</div> <!-- .events-content -->
+            </section>
+            <!--timeline ends-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--events modal ends-->
+    <div class="slideshow">
+<div class="container-fluid" id="firstcontainer">
+  <div class="row">
+  <ul class="cb-slideshow">
+      <li><span>Image 01</span></li>
+      <li><span>Image 02</span></li>
+      <li><span>Image 03</span></li>
+      <li><span>Image 04</span></li>
+      <li><span>Image 05</span></li>
+      <li><span>Image 06</span></li>
+  </ul>
 </div>
+</div>
+<div class="container-fluid" id="overfirstcontainer">
+  <div class="row">
+  <div  id="logo"><img class="img-responsive" src="images/invenio.png" alt="logo" id="logoimg"></div>
+</div>
+</div>
+</div>
+<!-- timeline starts-->
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
