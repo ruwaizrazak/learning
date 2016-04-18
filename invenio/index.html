@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
+<link rel="stylesheet" type="text/css" href="css/custominput.css" />
     <link rel="stylesheet" type="text/css" href="css/style1.css" />
 <script src="js/modernizr.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
@@ -48,9 +48,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">WHAT IS THIS?</a></li>
-        <li>
-        <li><a href="#">PRE-EVENTS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <!-- events are limited to single page. but lazy to redo it again, hence commenting -->
+        <!--
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENTS <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -58,7 +58,7 @@
             <li><a data-toggle="modal" data-target="#daytwo">Day Two</a></li>
           </ul>
         </li>
-        <li><a href="#">REACH TO US</a></li>
+        <li><a href="#">REACH TO US</a></li> -->
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -83,9 +83,21 @@
             <h4 class="modal-title">Sign In</h4>
           </div>
           <div class="modal-body">
-            <form><input type="text" value="enter USN" name="userid">
-            <input type="password" value="enter password" name="password">
-            <input type="submit" value="submit"></form>
+            <form><!-- mwonjan input starts-->
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-35" />
+                <label class="input__label input__label--kaede" for="input-35">
+                  <span class="input__label-content input__label-content--kaede">UserName</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="password" id="input-36" />
+                <label class="input__label input__label--kaede" for="input-36">
+                  <span class="input__label-content input__label-content--kaede">Password</span>
+                </label>
+              </span>
+              <!--mwonjan input ends-->
+            <input type="submit" value="Submit"></form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -94,6 +106,7 @@
 
       </div>
     </div>
+    <!--sign up starts-->
     <div class="modal fade" id="signup" role="dialog">
       <div class="modal-dialog">
 
@@ -101,17 +114,54 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Create a new account</h4>
+            <h4 class="modal-title">Sign Up</h4>
           </div>
           <div class="modal-body">
-            <form action="">
-              <input type="text" value="enter name" name="name">
-              <input type="text" value="enter email" name="email"><br>
-              <input type="text" value="enter USN" name="usn">
-              <input type="text" value="enter semester" name="sem"><br>
-              <input type="password" value="enter password" name="password">
-              <input type="submit" value="submit">
-            </form>
+            <form><!-- mwonjan input starts-->
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-21" />
+                <label class="input__label input__label--kaede" for="input-21">
+                  <span class="input__label-content input__label-content--kaede">First Name</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-22" />
+                <label class="input__label input__label--kaede" for="input-22">
+                  <span class="input__label-content input__label-content--kaede">Last Name</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-23" />
+                <label class="input__label input__label--kaede" for="input-23">
+                  <span class="input__label-content input__label-content--kaede">Email</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-24" />
+                <label class="input__label input__label--kaede" for="input-24">
+                  <span class="input__label-content input__label-content--kaede">USN</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-25" />
+                <label class="input__label input__label--kaede" for="input-25">
+                  <span class="input__label-content input__label-content--kaede">Semester</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="password" id="input-26" />
+                <label class="input__label input__label--kaede" for="input-26">
+                  <span class="input__label-content input__label-content--kaede">Password</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="password" id="input-27" />
+                <label class="input__label input__label--kaede" for="input-27">
+                  <span class="input__label-content input__label-content--kaede">Confirm Password</span>
+                </label>
+              </span>
+              <!--mwonjan input ends-->
+            <input type="submit" value="Submit"></form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -120,6 +170,7 @@
 
       </div>
     </div>
+    <!--sign up ends-->
     <!-- events modal starts-->
     <div class="modal fade" id="dayone" role="dialog">
       <div class="modal-dialog">
@@ -451,6 +502,42 @@ function scaleBannerVideoSize(element){
 
     });
 }</script>
+<script src="js/classie.js"></script>
+<script>
+  (function() {
+    // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+    if (!String.prototype.trim) {
+      (function() {
+        // Make sure we trim BOM and NBSP
+        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+        String.prototype.trim = function() {
+          return this.replace(rtrim, '');
+        };
+      })();
+    }
+
+    [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+      // in case the input is already filled..
+      if( inputEl.value.trim() !== '' ) {
+        classie.add( inputEl.parentNode, 'input--filled' );
+      }
+
+      // events:
+      inputEl.addEventListener( 'focus', onInputFocus );
+      inputEl.addEventListener( 'blur', onInputBlur );
+    } );
+
+    function onInputFocus( ev ) {
+      classie.add( ev.target.parentNode, 'input--filled' );
+    }
+
+    function onInputBlur( ev ) {
+      if( ev.target.value.trim() === '' ) {
+        classie.remove( ev.target.parentNode, 'input--filled' );
+      }
+    }
+  })();
+</script>
     <!-- Preloader -->
 
     <!-- Preloader -->

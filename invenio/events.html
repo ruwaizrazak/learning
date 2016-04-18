@@ -11,8 +11,14 @@
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Merriweather' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custominput.css" />
 
     <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
 <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,8 +27,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+  	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+  		var root = document.getElementsByTagName('html')[0];
+  		root.setAttribute('class', 'ff');
+  	};
+  	</script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" class="demo-2">
     <!-- brace yourself, navbar begins. tadaa -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -41,11 +53,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#">HOME <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">WHAT IS THIS?</a></li>
-        <li>
-        <li><a href="#">PRE-EVENTS</a></li>
         <li class="active"><a href="events.html">EVENTS</a></li>
-        <li><a href="#">REACH TO US</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -70,9 +78,21 @@
             <h4 class="modal-title">Sign In</h4>
           </div>
           <div class="modal-body">
-            <form><input type="text" value="enter USN" name="userid">
-            <input type="text" value="enter password" name="password">
-            <input type="submit" value="submit"></form>
+            <form><!-- mwonjan input starts-->
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-35" />
+                <label class="input__label input__label--kaede" for="input-35">
+                  <span class="input__label-content input__label-content--kaede">UserName</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="password" id="input-36" />
+                <label class="input__label input__label--kaede" for="input-36">
+                  <span class="input__label-content input__label-content--kaede">Password</span>
+                </label>
+              </span>
+              <!--mwonjan input ends-->
+            <input type="submit" value="Submit"></form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -81,6 +101,7 @@
 
       </div>
     </div>
+    <!--sign up starts-->
     <div class="modal fade" id="signup" role="dialog">
       <div class="modal-dialog">
 
@@ -88,17 +109,54 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Create a new account</h4>
+            <h4 class="modal-title">Sign Up</h4>
           </div>
           <div class="modal-body">
-            <form action="">
-              <input type="text" value="enter name" name="name">
-              <input type="text" value="enter email" name="email"><br>
-              <input type="text" value="enter USN" name="usn">
-              <input type="text" value="enter semester" name="sem"><br>
-              <input type="password" value="enter password" name="password">
-              <input type="submit" value="submit">
-            </form>
+            <form><!-- mwonjan input starts-->
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-21" />
+                <label class="input__label input__label--kaede" for="input-21">
+                  <span class="input__label-content input__label-content--kaede">First Name</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-22" />
+                <label class="input__label input__label--kaede" for="input-22">
+                  <span class="input__label-content input__label-content--kaede">Last Name</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-23" />
+                <label class="input__label input__label--kaede" for="input-23">
+                  <span class="input__label-content input__label-content--kaede">Email</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-24" />
+                <label class="input__label input__label--kaede" for="input-24">
+                  <span class="input__label-content input__label-content--kaede">USN</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="text" id="input-25" />
+                <label class="input__label input__label--kaede" for="input-25">
+                  <span class="input__label-content input__label-content--kaede">Semester</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="password" id="input-26" />
+                <label class="input__label input__label--kaede" for="input-26">
+                  <span class="input__label-content input__label-content--kaede">Password</span>
+                </label>
+              </span>
+              <span class="input input--kaede">
+                <input class="input__field input__field--kaede" type="password" id="input-27" />
+                <label class="input__label input__label--kaede" for="input-27">
+                  <span class="input__label-content input__label-content--kaede">Confirm Password</span>
+                </label>
+              </span>
+              <!--mwonjan input ends-->
+            <input type="submit" value="Submit"></form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -107,13 +165,563 @@
 
       </div>
     </div>
+    <!--sign up ends-->
 
-<!-- timeline starts-->
+<!--card expansion begins-->
+	<div class="container">
+		<div class="content">
+			<!-- trianglify pattern container -->
+			<div class="pattern pattern--hidden"></div>
+			<!-- cards -->
+			<div class="wrapper">
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath1">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/a.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Tech Expo</h2>
+								<p class="card__subtitle">Exhibit Your Hacks</p>
+							</div>
+							<div class="card__copy">
+								<p>Exhibit Your Hacks And Grab The Prize.</p>
+                <em>Rules</em>
+                <ul><li>PRESENTATION OF YOUR PROJECTS
+</li>
+                <li>Projects Should Be in Working Condition</li>
+                <li>Hypothesis Arent Appreciated</li></ul>
+              <button>Enroll Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath2">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/b.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Paper Presentation</h2>
+								<p class="card__subtitle">Scholarly Works Are Always Appreciated</p>
+
+							</div>
+							<div class="card__copy">
+<p>Do you bekieve that your scholarly works deserves a notification?</p>
+<p>Present Your Paper On Invenio 2.0 and achieve more than a mere notification</p>
+<ul><li>The paper should be submitted
+</li>
+<li>The paper submitted should be presented during the event.
+
+</li>
+<li>Hard copies of the same are to be submitted before presentation.
+</li>
+<li>Participants will get 8-10 minutes to present their paper.</li>
+<li>It will be followed by a question and answer session.
+</li>
+<li>The participants will have to present their papers in MS-Power Point (ppt) format only.
+</li>
+<li>Violation of any rule can result in rejection of paper.
+</li>
+<li>The organizers reserve the right to change/update the rules of the contest at any point of time and will do their best to inform to participants of the same. However, it is ultimately the responsibility of the participants to keep themselves updated.
+</li></ul>
+<button>Enroll Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath3">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/c.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Quiz</h2>
+								<p class="card__subtitle">Storm The Brain</p>
+							</div>
+							<div class="card__copy">
+							<p>Knowledge is knowing the right answer.
+Wisdom is applying it at the right moment.
+You know more than you think just as.
+You know less than you want to know.
+Be ready for the ultimate technical Quizzathon !!
+</p>
+<ul><li>Two Members in a Team
+</li>
+<li>No mobile phones are allowed while the competition is going on.
+</li>
+<li>There will be a preliminary round consisting 30 Questions.
+</li>
+<li>A total of four teams will be selected to Finalis.
+</li>
+<li>Extra round may be conducted if needed.
+</li>
+<li>Jury's decision will be final.
+</li></ul>
+              <button>Enroll Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath4">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/d.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Group Discussion</h2>
+								<p class="card__subtitle">Stand for the cause.</p>
+							</div>
+							<div class="card__copy">
+              <em>Rules</em>
+              <ul>
+                <li>GROUP DISCUSSION WILL BE DONE BETWEEN CERTAIN NUMBERS OF STUDENTS.
+</li>
+                <li>GENERAL TOPICS WILL BE PROVIDED.
+</li>
+                <li>WINNERS DECIDED BY THE JUDGES WILL MOVE ON TO NEXT ROUNDS
+</li>
+<button>Enroll Now</button>
+
+              </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath5">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/e.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Pandora's Box</h2>
+								<p class="card__subtitle">Brace Yourselves, Its the Pandora's Box</p>
+							</div>
+							<div class="card__copy">
+							<p>Pandora's Box is an interactive speciality game that lets players get in touch with their explorer side. This is definitely one of the best games around. Pick wisely, and you could walk out with a fortune. If your navigation skills are sharp, you can play Treasure Hunt.
+</p>
+<ul><li>Pandora's Box is an interactive speciality game that lets players get in touch with their explorer side. This is definitely one of the best games around. Pick wisely, and you could walk out with a fortune. If your navigation skills are sharp, you can play Treasure Hunt.
+</li>
+<li>4 Rounds In Total</li>
+<li>Standard Treasure Hunt Rules With Clues</li>
+<li>Damaging the clues will Result in Disqualification
+</li>
+<li>Last Round will be Rapid Fire Round.
+</li>
+<li>Jury's Decision is Final. </li></ul>
+<button>Enroll Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Dart</h2>
+								<p class="card__subtitle">Got Aim? Get Into Game</p>
+							</div>
+							<div class="card__copy">
+							<ul><li>Standard Darting Rules</li>
+							<li>Winners Will Be Decided By Highest Points</li></ul>
+              <button>Enroll Now</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Robo Soccer</h2>
+								<p class="card__subtitle">Play with bots as playing with boots are too mainstream</p>
+							</div>
+							<div class="card__copy"><p>The rules of soccer are very simple, basically it is this: if it moves, kick it. If it does not move,kick it until it does.
+If you’re set to kick it and kick it until it moves, register for our much-sought-for technical event Robo Soccer. Forward or Midfield or Defence â“€ the game is in your hands!</p>
+							<ul><li>SOCCER PLAYED BY ROBOTS</li>
+							<li>ROBOTS WILL BE PROVIDED BY THE EVENT COORDINATORS</li>
+            <li>INDIVIDUALS SCORING MORE GOALS IN THE GIVEN TIME WILL BE DECLARED AS THE WINNER.</li>
+          <li>DECISION OF JUDGES WILL BE FINAL</li></ul>
+              <button>Enroll Now</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Bridge Design</h2>
+								<p class="card__subtitle">Showcase Your Engineering Skills</p>
+							</div>
+							<div class="card__copy"><em>Rules</em>
+                <ul><li>No of participants in a team can be 2-3.
+</li><li>Designing of bridge should be done by the provided objects. We will popsicle sticks,feviquick as adhesive.</li>
+<li>Use of other materials will lead to disqualifications.
+</li>
+<li>Sticks can be altered physically by cutting , bending, notching etc. The number of sticks are limited to 250.</li>
+<li>Length of bridge should not be more than 50 cm and width 15 cm.
+</li>
+<li>The model built by each team will be tested till failure (yielding) by applying an incremental static load.</li>
+<li>In case of any discrepancies, the decision taken by the judges and the council will be the final verdict.</li></ul>
+<em>Testing the Bridge</em>
+<ul><li>We will place your bridge on the end of two tables.The load will be applied through a hook that connects a steel platform that will be laid upon the span of the bridge.</li>
+<li>The bridge model will be loaded till failure.
+</li>
+<li>The bridge will be scored on how well the material has been used to support the load. The efficiency will be calculated as the ratio of ultimate load capacity and the bridge weight.
+</li>
+<li>The procedure will be same for every team.</li></ul>
+              <button>Enroll Now</button>
+
+							</div>
+						</div>
+					</div>
+				</div><!--INDIVIDUAL CARD ENDS-->
+        <div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">FIFA</h2>
+								<p class="card__subtitle">The name defines it.</p>
+							</div>
+							<div class="card__copy"><em>Rules</em>
+                <ul><li>All games will be classic 1 vs 1 in multiplayer mode.</li>
+                <li>There will be no practising allowed, participants are only allowed to change necessary controls and check them.
+</li>
+                <li>Keyboards will be provided. Participants can use their own joysticks if necessary.</li>
+                <li>In case of a draw, match will be restarted with golden goal rule (same team must be selected).</li>
+                <li>In case of unintentional disconnection, admin will decide on how to proceed. <li>If game is within half time and no goals have been scored, the game will be restarted with same teams for a full time game. If not, the game will be played for the remaining time based on what time it disconnected with scores being carried over.</li></li>
+                <li>If at any time, a player intentionally disconnects /exits the game, he/she will be disqualified.in case of alt-tabbing, the admin will decide whether it was intentional /mistake and what action must be taken with disqualification being maximum penalty.</li>
+                <li>Teams can be either clubs or countries according to user's will (classic XI and world XI not allowed).</li>
+                <li>The prelims and league will be classic 4 min half time matches. Quarter and semis will all be 5 min half time matches and finals will be 6 min half time matches.</li>
+                <li>The 20 players having qualified will be drawn randomly into 4 groups from which 2 each will qualify to last 8 (quarter finals).</li>
+                <li>The admin's decision will be final.</li></ul>
+              <button>Enroll Now</button>
+
+							</div>
+						</div>
+					</div>
+				</div><!--INDIVIDUAL CARD ENDS-->
+        <div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Best Googler</h2>
+								<p class="card__subtitle">Team Up With Google.</p>
+							</div>
+							<div class="card__copy"><em>Rules</em>
+                <ul><li>THIS IS A SOLO EVENT</li>
+                <li>INTERNET CONNECTIVITY WILL BE PROVIDED.</li>
+                <li>PARTICIPANTS ARE NOT ALLOWED TO USE THEIR CONNECTIVITY</li>
+              <li>THE PERSON CLEARING THE MOST ROUNDS IN THE GIVEN TIME WILL BE DECLARED AS THE WINNER</li></ul>
+              <button>Enroll Now</button>
+
+							</div>
+						</div>
+					</div>
+				</div><!--INDIVIDUAL CARD ENDS-->
+        <div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">WORK PIECE</h2>
+								<p class="card__subtitle">Lets Craft It</p>
+							</div>
+							<div class="card__copy"><em>Rules</em>
+                <ul><li>WORK PIECE AND HACKSAW BLADE ARE PROVIDED.
+</li>
+                <li>PARTICIPANTS HAVE TO MAKE THE DESIGN WHICH IS PROVIDED.</li>
+                <li>DESIGN HAS TO BE MADE ON THE WORK PIECE.
+</li>
+                <li>TIME PLAYS A DECISIVE ROLE.</li>
+                <li>THE PERSON MAKING WITH IT PERFECT DIMENSION WILL BE NAMED AS WINNER
+</li></ul>
+              <button>Enroll Now</button>
+
+							</div>
+						</div>
+					</div>
+				</div><!--INDIVIDUAL CARD ENDS-->
+        <div class="card">
+          <div class="card__container card__container--closed">
+            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <clipPath id="clipPath6">
+                  <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                </clipPath>
+              </defs>
+              <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+            </svg>
+            <div class="card__content">
+              <i class="card__btn-close fa fa-times"></i>
+              <div class="card__caption">
+                <h2 class="card__title">CODING GEEKS</h2>
+                <p class="card__subtitle">Kill the bugs.</p>
+              </div>
+              <div class="card__copy">
+                <p>An individual coding event in which participants need to find the bugs in given code. The event will mainly focus on the ability of the participants to solve problems as quick as they can. The one who solves maximum number of bugs correctly in the allotted time shall be crowned the winner.
+</p>
+                <em>Rules</em>
+                <ul><li>INDIVIDUAL EVENT
+</li>
+                <li>CODING SHOULD BE DONE IN C++ ONLY</li>
+                <li>EXTRA ROUND MAY BE CONDUCTED IF REQUIRED
+</li>
+                <li>TIME PLAYS A DECISIVE ROLE.</li>
+                <li>RULES AND REGULATIONS ARE SUBJECT TO CHANGE BASED ON THE AVAILABILITY OF RESOURCES, INCLUDING TIME.
+</li>
+<li>EVENT COORDINATORS DECISION WILL BE FINAL AND BINDING</li></ul>
+              <button>Enroll Now</button>
+
+              </div>
+            </div>
+          </div>
+        </div><!--INDIVIDUAL CARD ENDS-->
+        <div class="card">
+          <div class="card__container card__container--closed">
+            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <clipPath id="clipPath6">
+                  <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                </clipPath>
+              </defs>
+              <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+            </svg>
+            <div class="card__content">
+              <i class="card__btn-close fa fa-times"></i>
+              <div class="card__caption">
+                <h2 class="card__title">SHARK TANK</h2>
+                <p class="card__subtitle">BE THE SHARK</p>
+              </div>
+              <div class="card__copy">
+                <p>Do you have an idea? are you brave enough to present it? get into the tank, then.
+</p>
+                <em>Rules</em>
+                  <ul><li>TWO ROUND EVENT
+</li>
+                <li>PERSON WHO CAN COME UP WITH THE BEST IDEAS WILL BE DECLARED AS THE WINNER</li>
+                <li>DECISION OF JUDGES WOULD EB FINAL
+</li>
+                </ul>
+              <button>Enroll Now</button>
+
+              </div>
+            </div>
+          </div>
+        </div><!--INDIVIDUAL CARD ENDS-->
+        <div class="card">
+          <div class="card__container card__container--closed">
+            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <clipPath id="clipPath6">
+                  <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                </clipPath>
+              </defs>
+              <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+            </svg>
+            <div class="card__content">
+              <i class="card__btn-close fa fa-times"></i>
+              <div class="card__caption">
+                <h2 class="card__title">CIRCUIT RESOLVING</h2>
+                <p class="card__subtitle">SOLVE THE CIRCUIT.</p>
+              </div>
+              <div class="card__copy">
+
+                <em>Rules</em>
+                <ul><li>EXCLUSIVELY FOR EC AND EEE STUDENTS
+</li>
+                <li>SIMPLE CIRCUIT WOULD BE GIVEN</li>
+                <li>INTERNET CONNECTIVITY WILL BE ALLOWED
+</li>
+                <li>TIME PLAYS A DECISIVE ROLE.</li>
+                <li>THE GROUP CRAFTING THE WORKING MODEL WILL BE DECLARED AS THE WINNER
+</li></ul>
+              <button>Enroll Now</button>
+
+              </div>
+            </div>
+          </div>
+        </div><!--INDIVIDUAL CARD ENDS-->
+        <div class="card">
+          <div class="card__container card__container--closed">
+            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <clipPath id="clipPath6">
+                  <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                </clipPath>
+              </defs>
+              <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/f.jpg"></image>
+            </svg>
+            <div class="card__content">
+              <i class="card__btn-close fa fa-times"></i>
+              <div class="card__caption">
+                <h2 class="card__title">LATHE MASTER</h2>
+                <p class="card__subtitle">Lathe 'em up.'</p>
+              </div>
+              <div class="card__copy">
+                <p>The objective of the competition is to obtain the replica of the given model from the provided stock material, using the lathe, minimum time and with maximum conformity.
+</p>
+                <em>Rules</em>
+                <ul><li>
+Machining should be completed within the permitted time.
+</li>
+                <li>
+Tools should be replaced, if its broken.
+</li>
+                <li>Accurate dimension should be achieved</li>
+                <li>Workpiece once given wont be replaced under any circumstances.</li>
+                <li>Participatns wont be allowed to communicate amongst them during the progress of event</li>
+                <li>Machine should be operated with caution</li>
+                <li>Maintain clean workspace</li>
+                <li>Decision of judges will be final and unbiased</li>
+                <li>No extra time will be give to any contestant in case of any damage or technical errors on the side of participants</li></ul>
+              <button>Enroll Now</button>
+
+              </div>
+            </div>
+          </div>
+        </div><!--INDIVIDUAL CARD ENDS-->
+			</div>
+			<!-- /cards -->
+		</div><!-- /content -->
+<!-- card expansion ends-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script>
+      (function() {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+        if (!String.prototype.trim) {
+          (function() {
+            // Make sure we trim BOM and NBSP
+            var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+            String.prototype.trim = function() {
+              return this.replace(rtrim, '');
+            };
+          })();
+        }
+
+        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+          // in case the input is already filled..
+          if( inputEl.value.trim() !== '' ) {
+            classie.add( inputEl.parentNode, 'input--filled' );
+          }
+
+          // events:
+          inputEl.addEventListener( 'focus', onInputFocus );
+          inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+
+        function onInputFocus( ev ) {
+          classie.add( ev.target.parentNode, 'input--filled' );
+        }
+
+        function onInputBlur( ev ) {
+          if( ev.target.value.trim() === '' ) {
+            classie.remove( ev.target.parentNode, 'input--filled' );
+          }
+        }
+      })();
+    </script>
+    <script src="js/vendors/trianglify.min.js"></script>
+  	<script src="js/vendors/TweenMax.min.js"></script>
+  	<script src="js/vendors/ScrollToPlugin.min.js"></script>
+  	<script src="js/vendors/cash.min.js"></script>
+  	<script src="js/Card-polygon.js"></script>
+  	<script src="js/demo-2.js"></script>
   </body>
 </html>

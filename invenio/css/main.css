@@ -88,14 +88,16 @@ p,a,{
   -ms-flex-align: center;
 margin-left: 30%;
 }
-input[type=text], input[type=password]{
-  margin: 10px;
-  border-radius: 10px;
-}
+
 input[type=submit]{
-  background-color: #3a3b36;
+  background-color: #9DABBA
   color:#fff;
-  border-radius:10px;
+  padding: 5px;
+  font-weight: bold;
+	font-family: 'Josefin Sans', sans-serif;
+  font-size: 99.25%;
+  display: block;
+  margin-left: 47%;
 }
 body {
     overflow: hidden;
@@ -193,7 +195,7 @@ body {
   }
   #logo{
     margin-top: -20px;
-    height: 40vh;
+    height: 60vh;
   }
 }
 @media all and (max-width: 490px) and (min-width: 360px){
