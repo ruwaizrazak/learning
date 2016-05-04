@@ -1,0 +1,86 @@
+
+#firstcontainer{
+  height: 105vh;
+  background: url("../images/firsthero.jpg");
+  background-size: cover;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+p{font-family: 'muli' , san-serif;color:#a1824e;}
+#aboutus, #interior, #commercial, #products, #footerspace{
+  background: #242424;
+}
+#aboutus p{
+  text-align: center;
+  padding:0px;
+  margin:0px;
+  font-size: 16px;
+}
+#abouttextarea{
+  padding: 4%;
+}
+
+
+#interiorimagepart{
+  background: url("../images/interior.jpg");
+  height: 50vh;
+  background-size: cover;
+}
+#interiortextpart p{
+  text-align: justify;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-top: 2%;
+  padding-top: 0;
+  padding-bottom: 3%;
+}
+
+#interiortextpart h3{
+  text-align: center;
+  margin-top: 23%;
+
+}
+#commercialimagepart{
+  background: url("../images/commercial.jpg");
+  height: 50vh;
+  background-size: cover;
+}
+#commercialtextpart p{
+  text-align: justify;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-top: 2%;
+  padding-top: 0;
+  padding-bottom: 3%;
+}
+
+#commercialtextpart h3{
+  text-align: center;
+  margin-top: 23%;
+
+}
+#productsimagepart{
+  background: url("../images/products.jpg");
+  height: 50vh;
+  background-size: cover;
+}
+#productstextpart p{
+  text-align: justify;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-top: 2%;
+  padding-top: 0;
+  padding-bottom: 3%;
+}
+
+#productstextpart h3{
+  text-align: center;
+  margin-top: 23%;
+}
+#footerlogo img{
+  position: relative;
+  left: 29%;
+}
